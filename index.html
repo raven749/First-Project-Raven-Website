@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inknut+Antiqua:600" rel="stylesheet type='text/css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js">    </script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js">    </script>
     <title>Raven Website</title>
 </head>
 
@@ -35,7 +39,26 @@
     <div class="collapse navbar-collapse" id="RavenNavbar">
       <ul class="nav justify-content-center navbar-nav">
         <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="history.html">History</a></li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown">History
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="history.html#page-index">History</a></li>  
+              <li><a href="history.html#early-years">Early Years</a></li>
+              <li><a href="history.html#neat-years">JThe Neat Years</a></li>
+              <li><a href="history.html#atlantic">The Atlantic Years</a></li>
+              <li><a href="history.html#nineties">The Nineties</a></li>
+              <li><a href="history.html#two-thousands">2000s</a></li>
+              <li><a href="history.html#2010s">2010s</a></li>              
+              <li><a href="history.html#influences">Influences</a></li>
+              <li><a href="history.html#john-gallagher">John Gallagher</a></li>
+              <li><a href="history.html#mark-gallagher">Mark Gallagher</a></li>
+    	      <li><a href="history.html#rob-hunter">Rob Hunter</a></li>
+    	      <li><a href="history.html#joe-hasselvander">Joe Hasselvander</a></li>
+    	      <li><a href="history.html#mike-heller">Mike Heller</a></li>
+    	      <li><a href="history.html#influenced">Influenced</a></li>
+            </ul>
+          </li>       
         <li><a href="discography.html">Discography</a></li>
         <li><a href="media.html">Media</a></li>
         <li><a href="tour-dates.html">Tour Dates</a></li>
@@ -62,14 +85,14 @@
                 </ul>
                 </div>
           </div>
-         </section>
+    </section>
 
     
     <!--------------------------------------------Home Columns--------------------------------------------------------------->  
     
     <!-----------------------------------------Latest News Column-------------------------------------------> 
     
-     <section class="container columns-section-class center-block content">
+     <section class="container-column columns-section-class center-block content">
             <div class="col-xs-12 col-sm-12 col-md-4 section-column-latest-news text-center">
                         <h3 class="section-heading uppercase">Latest News</h3>
                 
@@ -113,14 +136,14 @@
     <div class= "footer  fixed-bottom"
       <div class="container-fluid">
         
-       <div class="col-md-4 align-baseline raven-logo">
+       <div class="col-xs-12 col-sm-12 col-md-4 align-baseline raven-logo">
          
          <img class="img-responsive center-block" src="assets/images/Raven-silver-logo-transparent.png" alt="Raven">
         </div>
-        <div class="col-md-4 align-baseline copyright">
+        <div class="col-xs-12 col-sm-12 col-md-4 align-baseline copyright">
             <p>Copyright @Robert D Sweeten </p>
         </div>
-        <div class="col-md-4 align-baseline contact">
+        <div class="col-xs-12 col-sm-12 col-md-4 align-baseline contact">
          <a class= "text-warning  contact-link" href="bookings.html">Contact</a>
         </div>
       </div>

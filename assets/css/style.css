@@ -13,7 +13,7 @@ html {
     background: url("../images/all_for_one.jpg") no-repeat center center fixed; 
     
    background-repeat: no-repeat;
-    background-position: center center !important;
+    background-position: center center!important;
     background-attachment: fixed;
     -webkit-background-size: contain;
     -moz-background-size: contain;
@@ -23,14 +23,20 @@ html {
     padding: 0;
     margin: 0;
     float: none;
-    padding-bottom: 120px;
-    position:relative;
+    /*padding-bottom: 200px;*/
+    /*position:relative;*/
     min-height:100%;
-    padding-bottom: 800px
-    
-  
+    padding-bottom: 400px
 
 }
+
+body {
+  /* Margin bottom by footer height */
+  /*padding-bottom: 400px;*/
+}
+
+
+
 
  /*.page-discography {*/
 #page-discography {
@@ -177,6 +183,18 @@ html {
 
 /*--------------------------------Navbar Postion and Appearance------------------------------------------*/ 
 
+.navbar-default {
+
+    /*background-color:black !important;*/
+        background:none !important;
+              background-color:transparent !important;
+      border-color:transparent!important;
+      background-image:none!important;
+      box-shadow:none!important;  
+
+
+     }
+
 .navbar {
     /*font-family: Arial, sans-serif */
     font-family: 'Inknut Antiqua', serif !important;
@@ -186,12 +204,12 @@ html {
     align-items: center;
     vertical-align: middle;
     color: red;
-    background-color: transparent;
     float:none;
     margin:0 auto;
     position: fixed;
     width: 100%;
-
+    z-index:2 !important;
+   /*opacity: 0.7 !important;*/
      }
 
 /*--------------------------------Navbar Opacity------------------------------------------*/ 
@@ -199,10 +217,10 @@ html {
 .navbar-nav {
     width: 100%;
     text-align: center;
-    opacity: 0.7;
-    -moz-opacity: 0.7;
-    -khtml-opacity: 0.7;
-    background-color: black;
+    /*opacity: 0.7 !important;*/
+    /*-moz-opacity: 0.7 !important;*/
+    /*-khtml-opacity: 0.7 !important;*/
+
 
 /*------------------------------Navbar List-Items appearance-------------------------------*/ 
 
@@ -213,7 +231,7 @@ html {
     color: red !important;
     font-size: 1.1em !important;
     font-weight: bold !important;
-    background-color: black;
+    /*background-color: black;*/
 }     
  
 /*------------------------------Navbar Link appearance-------------------------------*/  
@@ -222,7 +240,7 @@ html {
     color: red !important;
     font-size: 1.2em !important;
     font-weight: 900 !important;
-    background-color: black;
+    /*background-color: black!important;*/
 
 }
 
@@ -248,8 +266,49 @@ color: #faebd7 !important;
     color: red;
 }
 
+/*-----------------------.....-------Navbar History Dropdown-------------------------.......------*/ 
 
 
+.navbar-default .dropdown-menu {
+     background-color: black;
+     color:red;
+     opacity: 1!important;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a, .navbar-default .navbar-nav .open .dropdown-menu {
+    background-color: black;
+    color:red;
+    opacity: 1!important;
+}
+
+
+/*.dropdown-item:active.dropdown-item:hover{background-color: white !important;}*/
+
+/*.dropdown-menu {*/
+/*    background-color: white!important;*/
+/*    background-image: none!important;*/
+/*    opacity: 1!important;*/
+/*}*/
+
+
+.dropdown-menu ul li  a{
+    opacity: 1!important;
+ }
+
+
+.dropdown-menu > li > a:hover {
+    background-color: white!important;
+    background-image: none!important;
+    opacity: 1!important;
+}
+
+/*@media (min-width:480px) {*/
+ 
+/*.dropdown:hover .dropdown-menu {*/
+/*    display: block;*/
+/*    margin-top: 0;*/
+/*} */
+/*}*/
  
  /*--------------------------------------------Icons---------------------------------------------------------------*/
  
@@ -339,6 +398,10 @@ color: #faebd7 !important;
   
 }
 
+
+
+
+
 @media (min-width: 768px) {
 .list-group-horizontal li a {
     position: relative;
@@ -403,9 +466,24 @@ color: #faebd7 !important;
  
  /*-------------------------------------------- Home Columns---------------------------------------------------------------*/
 
+/*#container-column*/
+/*{*/
+/*    margin: 0 auto;*/
+/*     height: 30vh;*/
+/*     width: 50vw;*/
+/*    padding-top: 0;*/
+/*    padding-left: 0;*/
+/*    padding-right: 0;*/
+/*    justify-content: center;*/
+/*    vertical-align:middle;*/
+/*    align-items: center;*/
+/*    position: absolute;*/
+/*    float: none;*/
+     
+/*}*/
 
 
- /*-------------------------------------Home Columns Responsive Sizingg---------------------------------------------*/
+ /*-------------------------------------Home Columns Responsive Sizing---------------------------------------------*/
 
 @media only screen and (max-width : 1200px) {
  .columns-section-class{
@@ -457,17 +535,19 @@ color: #faebd7 !important;
 
 @media only screen and (max-width : 480px) {
  .columns-section-class{
-    /*margin: 0 auto;*/
     margin: 0 auto;
      height: 0;
      width: 35vw;
     padding-top: 0 !important;
+    padding-left: 0;
     padding-right: 0;
     justify-content: center;
-    vertical-align: top !important;
+    /*vertical-align: top !important;*/
+    vertical-align: middle !important;
     align-items: center;
     float: none !important;
     overflow-x: hidden !important;
+    /*overflow-y: hidden !important;*/
     min-height:100%;
     position: relative
     /*padding-left: 1px !important;*/
@@ -556,6 +636,48 @@ color: #faebd7 !important;
   color:red;
   padding-top: 3vh; 
 }
+
+ .history-sub-header{
+ background-color:transparent;
+ background: rgba(255, 0, 0, 0)!important;
+  font-family: "Lithos Pro Regular";
+ font-size: 2.5em!important;
+  font-weight: bold!important;
+  color:red;
+  padding-top: 3vh; 
+}
+
+ .history-sub-sub-header{
+ background-color:transparent;
+ background: rgba(255, 0, 0, 0)!important;
+  font-family: "Lithos Pro Regular";
+ font-size: 2em!important;
+  font-weight: bold!important;
+  color:red;
+  padding-top: 3vh; 
+}
+
+ .history-instructions{
+ background-color:transparent;
+ background: rgba(255, 0, 0, 0)!important;
+  font-family: "Lithos Pro Regular";
+ font-size: 1.5em!important;
+  font-weight: bold!important;
+  color:red;
+  padding-top: 3vh; 
+}
+ 
+    /*-------------------------------------Influences Header---------------------------------------------*/
+ 
+ .influences-header{
+ background-color:transparent;
+ background: rgba(255, 0, 0, 0)!important;
+  font-family: "Lithos Pro Regular";
+ font-size: 2em!important;
+  font-weight: bold!important;
+  color:red;
+  padding-top: 3vh; 
+} 
  
    /*-------------------------------------Column Appearance---------------------------------------------*/
 
@@ -641,6 +763,26 @@ background: rgba(0, 0, 0, 0.2);
 
 
  /*-------------------------------------------- Discography Page-------------------------------------------------------------*/
+ 
+  /*------------------------------------album link description ---------------------------------------------*/
+  
+   .album-link-header-white{
+ font-family: "Lithos Pro Regular";
+ font-size: 20px!important;
+  font-weight: bold!important;
+  color:white;
+  opacity:1!important;
+  /*padding-top: 3vh; */
+}
+ 
+ .album-link-header-red{
+ font-family: "Lithos Pro Regular";
+ font-size: 20px!important;
+  font-weight: bold!important;
+  color:red;
+  opacity:1!important;
+  /*padding-top: 3vh; */
+}
  
  /*------------------------------------Discography Container Padding ---------------------------------------------*/ 
 
@@ -1008,12 +1150,21 @@ padding-top: 14vh
 
 .links-header {
  font-family: "Lithos Pro Regular";
- font-size: 3em!important;
+ font-size: 2em!important;
   font-weight: bold!important;
   color:red;
   opacity:1!important;
   padding-top: 3vh;
+   
 }
+
+  .links-columns{
+   margin: 0;
+   float: none;
+   padding-left:0;
+   padding-right:0;
+   padding-bottom: 0;
+  }
 
 .header-shadow
 {
@@ -1037,10 +1188,10 @@ padding-top: 14vh
  .links-table td {
   color: white!important;
     font-size: large!important;
-  /*font-size: 20px!important;*/
   font-weight:bold !important;
   padding: 0;
   margin: 0;
+  text-align: center;
  }
 
  .links-table td a {
@@ -1050,8 +1201,7 @@ padding-top: 14vh
   font-weight:bold !important;
   padding: 0;
   margin: 0;
-  /*display:block;*/
-  /*width:100%;*/
+   text-align: center;
 
 }
 
@@ -1062,7 +1212,10 @@ padding-top: 14vh
   border-spacing: 0;
   border-collapse: collapse;
   /*font-size: 20px!important;*/
-  Cellpadding:0
+  padding:0;
+  margin: 0;
+   float: none;
+  text-align: center;
 }
 
 
@@ -1071,12 +1224,15 @@ padding-top: 14vh
  @media only screen and (max-width : 414px) {
  
  .links-table tbody {
-    height: 100px !important;
+    /*height: 100px !important;*/
     overflow: scroll;
     display:block;
     border-spacing: 0;
     border-collapse: collapse;
-
+    width: 100vw!important;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
  }
  
   .links-columns{
@@ -1096,12 +1252,13 @@ padding-top: 14vh
 
   .links-columns{
    padding-top: 15vh;
-   margin: 0 auto;
+   margin: 0;
    float: none;
    border-spacing: 0;
    border-collapse: collapse;
    padding-left:0;
-   padding-right:0;   
+   padding-right:0;  
+    text-align: center;
  
  
   }
@@ -1109,10 +1266,17 @@ padding-top: 14vh
   table-layout: fixed;
   border-spacing: 0;
   border-collapse: collapse;
-  }
+  /*width: 100%;*/
+  /*max-width: 100%;*/
+  margin-bottom: 20px;
+  text-align: center;
+      margin: 0 auto !important;
+}
+  
   
     .links-table tbody{
        font-size: 20px!important;
+        text-align: center;
   }
 }
 
@@ -1248,7 +1412,57 @@ label{
  }
     
     
-/*-------------------------------------------- Footer---------------------------------------------------------------*/    
+/*--------------------------------------------Text Hover links for ALbum Images---------------------------------*/
+
+
+
+.hiddenimg {
+  display: none;
+}
+
+.hiddentxt {
+  font-weight: bold;
+  color: #F00;
+}
+
+.hiddentxt a {
+  color: #F00;
+  text-decoration: none;
+}
+
+.hiddenclick {
+  font-weight: bold;
+  color: #F00;
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+
+
+hiddenclick:active {
+	pointer-events: none;
+}
+
+.hiddenclick a {
+  color: #F00;
+  text-decoration: none;
+}
+
+.hiddenclick a:visited {
+  color: #F00;
+  text-decoration: none;
+}
+
+.hiddentxt:hover ~ .hiddenimg {
+  display: block;
+    pointer-events: none;
+}
+
+.hiddenclickimg {
+  display: none;
+}
+    
+/*---------------------------------------------------------- Footer-------------------------------------------------------------------------------------*/    
 
 
  
@@ -1273,11 +1487,12 @@ label{
     padding-bottom: 0;
      bottom:0;
      margin-bottom: 0;
+     width: 330vw;
 }
   .copyright{
    font-family: sans-serif;
    color: red!important;
-   font-size: 1.5em!important;
+   font-size: 1.5vw!important;
    background-color: transparent!important;
    font-weight: bolder;
    position:relative;
@@ -1285,11 +1500,35 @@ label{
     align-items: flex-end;
     /*float: none;*/
     padding-bottom: 0;
+     padding-left: 5vw;
+    vertical-align: bottom;
+     bottom:0;
+     margin-bottom: 0;
+       width: 330vw;
+
+  }
+  
+  
+@media only screen and (max-width : 767px) {
+  .copyright{
+   font-family: sans-serif;
+   color: red!important;
+   font-size: 3vw!important;
+   background-color: transparent!important;
+   font-weight: bolder;
+   position:relative;
+    display: flex;
+    align-items: flex-end;
+    /*float: none;*/
+    padding-bottom: 0;
+     padding-left: 5vw;
     vertical-align: bottom;
      bottom:0;
      margin-bottom: 0;
 
   }
+}
+  
   
   
   .contact{
@@ -1324,7 +1563,7 @@ label{
   .contact-link{
    /*font-family: sans-serif;*/
    color: red!important;
-   /*font-size: 4em!important;*/
+   font-size: 3vw!important;
    background-color: transparent!important;
   }
 
@@ -1456,16 +1695,21 @@ label{
   display:flex;
   position: relative;
   align-items: flex-end;
+  
+  margin-top:0;
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 1rem;
+  /*padding: 1rem;*/
   text-align: center;
-  height: 450px;
+  /*height: 450px;*/
+  /*height: 00.2vh;*/
   /*background:black;*/
   /*background: rgba(0, 0, 0, 0);*/
   background: transparent;
-
+ 
+    /*padding : 1rem!important;*/
+  max-height: 25vh; 
 
 }
 
